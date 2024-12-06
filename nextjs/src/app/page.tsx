@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Header from "../common/header";
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from "@fortawesome/free-solid-svg-icons/faEye";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
         <div className="col-lg-6 mx-auto">
           <div className="card rounded-4 shadow border-light">
             <div className="card-body">
+              <h3 className="mb-4 text-center text-primary fw-bold">Create Form</h3>
               <form>
                 <div className="row">
                   <div className="col-lg-6">
@@ -39,22 +40,23 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <Link href="#" className="btn btn-primary shadow-none">Submit</Link>
+                <Link href="#" className="btn btn-primary primary_btn shadow-none col-md-4 mx-auto d-block"><FontAwesomeIcon icon={faPaperPlane} className="me-2 fa-paper-plane" /> Submit</Link>
               </form>
             </div>
           </div>
         </div>
 
         <div className="mt-5 card rounded-4 shadow border-light p-3">
-          <h3 className="mb-3 text-center">Results</h3>
+          <h3 className="mb-4 text-center text-primary fw-bold">Results</h3>
           <div className="table-responsive">
-            <table className="table table-dark table-striped table-bordered mb-0">
-              <thead>
+            <table className="table table-bordered mb-0 table-hover">
+              <thead className="table-dark">
                 <tr>
-                  <th>#</th>
-                  <th>First</th>
-                  <th>Last</th>
-                  <th>Handle</th>
+                  <th className="col">#</th>
+                  <th className="col-3">Name</th>
+                  <th className="col-3">Email Address</th>
+                  <th className="col-3">Phone Number</th>
+                  <th className="col-auto text-center">Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -62,19 +64,49 @@ export default function Home() {
                   <th>1</th>
                   <td>Mark</td>
                   <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>0987654321</td>
+                  <td>
+                    <div className="d-flex gap-2 justify-content-center">
+                      <button className="btn btn-sm btn-success bg-success shadow-none rounded-pill bg-gradient">
+                        <FontAwesomeIcon icon={faEye} />
+                      </button>
+                      <button className="btn btn-sm btn-danger bg-danger shadow-none rounded-pill bg-gradient">
+                        <FontAwesomeIcon icon={faTrash} />
+                      </button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <th>2</th>
                   <td>Jacob</td>
                   <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>0987654321</td>
+                  <td>
+                    <div className="d-flex gap-2 justify-content-center">
+                      <button className="btn btn-sm btn-success bg-success shadow-none rounded-pill bg-gradient">
+                        <FontAwesomeIcon icon={faEye} />
+                      </button>
+                      <button className="btn btn-sm btn-danger bg-danger shadow-none rounded-pill bg-gradient">
+                        <FontAwesomeIcon icon={faTrash} />
+                      </button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <th>3</th>
                   <td>Larry the Bird</td>
                   <td>@twitter</td>
-                  <td>@twitter</td>
+                  <td>0987654321</td>
+                  <td>
+                    <div className="d-flex gap-2 justify-content-center">
+                      <button className="btn btn-sm btn-success bg-success shadow-none rounded-pill bg-gradient">
+                        <FontAwesomeIcon icon={faEye} />
+                      </button>
+                      <button className="btn btn-sm btn-danger bg-danger shadow-none rounded-pill bg-gradient">
+                        <FontAwesomeIcon icon={faTrash} />
+                      </button>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
