@@ -46,7 +46,6 @@ export default function Home() {
         </div>
 
         <div className="mt-5 card rounded-4 shadow border-light p-3">
-          <FontAwesomeIcon icon={faThumbsUp} className="fa-fw" />
           <h3 className="mb-3 text-center">Results</h3>
           <div className="table-responsive">
             <table className="table table-dark table-striped table-bordered mb-0">
