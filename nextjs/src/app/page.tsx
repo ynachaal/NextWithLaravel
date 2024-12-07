@@ -9,39 +9,46 @@ export default function Home() {
     <section className="container">
       <Header />
       <div className="container mt-5">
-        <div className="col-lg-6 mx-auto">
-          <div className="card rounded-4 shadow border-light">
-            <div className="card-body">
-              <h3 className="mb-4 text-center text-primary fw-bold">Create Form</h3>
-              <form>
-                <div className="row">
-                  <div className="col-lg-6">
-                    <div className="form-floating mb-3">
-                      <input type="text" className="form-control shadow-none" id="floatingName" placeholder="name" />
-                      <label htmlFor="floatingName">Name</label>
+        <div className="row align-items-center">
+          <div className="col-lg-5">
+            <img src="BecomeAnAuthorImg.webp" alt="our-features" className="img-fluid" />
+          </div>
+          <div className="col-lg-7">
+            <div>
+              <div className="card rounded-4 shadow border-light">
+                <div className="card-body">
+                  <h3 className="mb-4 text-center text-primary fw-bold">Create Form</h3>
+                  <form>
+                    <div className="row">
+                      <div className="col-lg-6">
+                        <div className="form-floating mb-3">
+                          <input type="text" className="form-control shadow-none" id="floatingName" placeholder="name" />
+                          <label htmlFor="floatingName">Name</label>
+                        </div>
+                      </div>
+                      <div className="col-lg-6">
+                        <div className="form-floating mb-3">
+                          <input type="email" className="form-control shadow-none" id="floatingInput" placeholder="name@example.com" />
+                          <label htmlFor="floatingInput">Email address</label>
+                        </div>
+                      </div>
+                      <div className="col-lg-6">
+                        <div className="form-floating mb-3">
+                          <input type="number" className="form-control shadow-none" id="floatingPhone" placeholder="Phone Number" />
+                          <label htmlFor="floatingPhone">Phone Number</label>
+                        </div>
+                      </div>
+                      <div className="col-lg-6">
+                        <div className="form-floating mb-3">
+                          <input type="password" className="form-control shadow-none" id="floatingPassword" placeholder="Password" />
+                          <label htmlFor="floatingPassword">Password</label>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="form-floating mb-3">
-                      <input type="email" className="form-control shadow-none" id="floatingInput" placeholder="name@example.com" />
-                      <label htmlFor="floatingInput">Email address</label>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="form-floating mb-3">
-                      <input type="number" className="form-control shadow-none" id="floatingPhone" placeholder="Phone Number" />
-                      <label htmlFor="floatingPhone">Phone Number</label>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="form-floating mb-3">
-                      <input type="password" className="form-control shadow-none" id="floatingPassword" placeholder="Password" />
-                      <label htmlFor="floatingPassword">Password</label>
-                    </div>
-                  </div>
+                    <Link href="#" className="btn btn-primary primary_btn shadow-none col-md-4 mx-auto d-block"><FontAwesomeIcon icon={faPaperPlane} className="me-2 fa-paper-plane" /> Submit</Link>
+                  </form>
                 </div>
-                <Link href="#" className="btn btn-primary primary_btn shadow-none col-md-4 mx-auto d-block"><FontAwesomeIcon icon={faPaperPlane} className="me-2 fa-paper-plane" /> Submit</Link>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -110,6 +117,39 @@ export default function Home() {
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+        <div className="features">
+          <div className="row gx-5">
+            <div className="col-lg-8">
+              <div className="imginfo">
+                <img src="our-features.png" alt="our-features" className="img-fluid" />
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="imginfo_content">
+                <small className="text-uppercase text-muted">BENnefits</small>
+                <h3 className="mt-2 ">Happening cities</h3>
+                
+                <div className="info_card">
+                  <span className="badge bg-danger bg-opacity-10 text-danger">Advertising</span>
+                  <h4>Cost-effective advertising</h4>
+                  <p>With a free listing, you can advertise your rental with no upfront costs</p>
+                </div>
+                
+                <div className="info_card">
+                  <span className="badge bg-primary bg-opacity-10 text-primary">Exposure</span>
+                  <h4>Reach millions with Chisfis</h4>
+                  <p>With a free listing, you can advertise your rental with no upfront costs</p>
+                </div>
+
+                <div className="info_card">
+                  <span className="badge bg-success bg-opacity-10 text-success">Secure</span>
+                  <h4>Secure and simple</h4>
+                  <p>With a free listing, you can advertise your rental with no upfront costs</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

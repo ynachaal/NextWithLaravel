@@ -11,12 +11,12 @@
   --shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -84,4 +84,37 @@ body {
   background-color: var(--light);
   border-color: var(--primary);
   color: var(--primary);
+}
+.features{
+  padding: 80px 0;
+}
+.imginfo_content small{
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.imginfo_content h3{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+}
+.imginfo_content .badge{
+  font-size: 13px;
+  font-weight: 500;
+  padding: .35rem 1rem;
+  border-radius: 50px;
+  display: block;
+  width: fit-content;
+  margin-bottom: .65rem;
+}
+.info_card h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.info_card{
+  margin-bottom: 2rem;
+}
+.info_card p{
+  font-size: 16px;
+  color: #999999;
 }
