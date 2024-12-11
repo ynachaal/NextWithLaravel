@@ -130,13 +130,13 @@ export default function Home() {
               <div className="imginfo_content">
                 <small className="text-uppercase text-muted">BENnefits</small>
                 <h3 className="mt-2 ">Happening cities</h3>
-                
+
                 <div className="info_card">
                   <span className="badge bg-danger bg-opacity-10 text-danger">Advertising</span>
                   <h4>Cost-effective advertising</h4>
                   <p>With a free listing, you can advertise your rental with no upfront costs</p>
                 </div>
-                
+
                 <div className="info_card">
                   <span className="badge bg-primary bg-opacity-10 text-primary">Exposure</span>
                   <h4>Reach millions with Chisfis</h4>

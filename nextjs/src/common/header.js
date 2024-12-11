@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function Header() {
+
     return (
         <nav className="navbar navbar-expand-lg bg-dark shadow-sm rounded-3 mt-2 nav_header" aria-label="Eleventh navbar example" data-bs-theme="dark">
             <div className="container-fluid px-lg-2">
@@ -15,7 +16,7 @@ export default function Header() {
                             <Link className="nav-link active" href="#">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" href="#">About</Link>
+                            <Link className="nav-link" href="students">About</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Products</Link>
@@ -32,7 +33,7 @@ export default function Header() {
                             <Link className="nav-link" href="#">Contact Us</Link>
                         </li>
                     </ul>
-                    <Link href="/" className="btn btn-primary primary_btn rounded">Get started</Link>
+                    <Link href="/students" className="btn btn-primary primary_btn rounded">Get Students...</Link>
                 </div>
             </div>
         </nav>
